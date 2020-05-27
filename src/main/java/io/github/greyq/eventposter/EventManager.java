@@ -42,7 +42,7 @@ public class EventManager {
                 this.getReceiverClasses().add(new ReceiverClass(object, method, annotation.priority()));
             }
         }
-        this.getReceiverClasses().sort(Comparator.comparing(ReceiverClass::getPriority));
+        this.getReceiverClasses().sort(Comparator.comparing(ReceiverClass::getPriority).reversed());
     }
 
     /**
