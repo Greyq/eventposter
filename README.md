@@ -29,7 +29,10 @@ public class Main {
     public void main(String[] args) {
         // Register this instance of the main class
         manager.registerReceiverClass(this);
-        
+
+        // Mark the receiver as receiving 
+        manager.setReceiving(this, true);        
+
         // Send an event
         manager.sendEvent(new Event("Hello"));
     }
@@ -47,7 +50,5 @@ Running `main(String[] args)` will output:
 Hello
 ```
 
-You can give priority to an event by declaring it like:
-```java
-@Receiver(int priority)
-```
+You can give priority to an event by declaring it like
+`@Receiver(priority = <long>)`
