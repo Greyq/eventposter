@@ -1,3 +1,6 @@
+# ARCHIVED
+This project has been archived, since it's not something I plan on updating, and wasn't intended for general use in the first place.
+
 # Event Poster
 Event poster is just a quick event bus I wrote for fun.
 
